@@ -1,0 +1,3 @@
+def capsSmall(word):
+    for i in word:
+        

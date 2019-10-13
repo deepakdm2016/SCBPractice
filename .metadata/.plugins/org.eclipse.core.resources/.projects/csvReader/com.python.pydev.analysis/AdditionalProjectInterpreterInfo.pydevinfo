@@ -1,0 +1,43 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\Deepak\SeleniumSCB\.metadata\.plugins\org.eclipse.core.resources\.projects\csvReader\com.python.pydev.analysis\v2_indexcache
+readCSV|1570756053396873000|C:\Users\Deepak\SeleniumSCB\csvReader\readCSV.py
+caseStudy3|1570843475288313000|C:\Users\Deepak\SeleniumSCB\csvReader\caseStudy3.py
+-- END DISKCACHE
+-- START DICTIONARY
+6
+2=readCSV
+5=Customer
+4=caseStudy3
+1=C:\Users\Deepak\SeleniumSCB\csvReader\readCSV.py
+6=Customer.__init__
+3=C:\Users\Deepak\SeleniumSCB\csvReader\caseStudy3.py
+-- END DICTIONARY
+-- START TREE 1
+14
+age|1|age!1^37#5*19@
+csv|0|
+cus|2|CustomerNotAllowedException!3^3#7*33@Customer!3^7#7*33@
+dat|1|data!1^32#5*19@
+fai|1|fairDeal!3^25#5*34@
+job|1|jobReader!1^4#5*18@
+l|1|l!1^28#1*19@
+lin|0|
+max|0|
+min|0|
+occ|1|occupation!1^33#5*19@
+out|1|output!1^38#5*19@
+rel|1|relJobs!1^26#1*19@
+val|0|
+-- END TREE
+-- START TREE 2
+8
+__i|1|__init__!5&3^8#9*34@
+bla|1|blackListed!6&3^12#9*35@
+cre|1|createOrder!5&3^14#9*34@
+cus|0|
+fir|1|firstName!6&3^10#9*35@
+ini|0|
+las|1|lastName!6&3^11#9*35@
+tit|1|title!6&3^9#9*35@
+-- END TREE

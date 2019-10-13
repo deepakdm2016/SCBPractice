@@ -1,0 +1,12 @@
+package test;
+
+public class day1 {
+	
+	
+	@Test
+	public void firstTestMethod()
+	{
+		System.out.println("Hello, This is my first testNG program");
+	}
+
+}

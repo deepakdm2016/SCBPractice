@@ -1,0 +1,13 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class readProperties {
+
+	Properties p=new Properties();
+
+	FileInputStream fis=new FileInputStream(new File("C:\\Users\\Deepak\\SeleniumSCB\\ProjectProperties\\input.properties"));
+	p.load(fis);
+	
+	
+}

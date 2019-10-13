@@ -1,0 +1,29 @@
+class Banking:
+    
+    def __init__(self, name, pwd, amt):
+        self.name=name
+        self.pwd=pwd
+        self.amt=amt
+    
+    def printAllDetails(self):
+        print("Name",self.name)
+        print("Password is",self.pwd)
+        print("Amount",self.amt)
+        
+    def TotalAmount(self):
+        return round(self.p+self.si(),2)
+    
+    def deposit(self,damt):
+        self.amt+=damt
+        print("Deposited ",damt+"Balance is",(self.amt+damt))
+        
+    def withdraw(self,wamt):
+        self.amt-=wamt
+        print("Withdrawn ",wamt+"Balance is",(self.amt-wamt))
+
+        
+
+myBank=Banking("Deepak","Vinithra",5000)
+myBank.deposit(1000)
+myBank.withdraw(500)
+myBank.printAllDetails()

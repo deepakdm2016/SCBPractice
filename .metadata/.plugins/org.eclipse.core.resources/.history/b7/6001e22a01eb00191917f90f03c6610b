@@ -1,0 +1,24 @@
+class Banking:
+    
+    def __init__(self, name, pwd, amt):
+        self.name=name
+        self.pwd=pwd
+        self.amt=amt
+    
+    def si(self):
+        return round(self.p*self.t*self.r/100,2);
+    
+    def printAllDetails(self):
+        print("Name",self.name)
+        print("Password is",self.pwd)
+        print("time period",self.t)
+        print("Amount",self.TotalAmount())
+        
+    def TotalAmount(self):
+        return round(self.p+self.si(),2)
+    
+    def deposit(self,damt):
+        self.amt+=damt
+        
+    def withdraw(self,wamt):
+        self.amt+=wamt

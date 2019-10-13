@@ -1,0 +1,6 @@
+def binSearch(li,saerch):
+    f=li[0]
+    l=li[len(li)/2]
+    if((f+l)/2<search):
+    
+    

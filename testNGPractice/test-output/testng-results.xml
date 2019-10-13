@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" total="15" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="83" started-at="2019-10-08T13:39:29Z" finished-at="2019-10-08T13:39:29Z">
+    <groups>
+      <group name="Smoke">
+        <method signature="day1.firstTestMethod()[pri:0, instance:test.day1@5f375618]" name="firstTestMethod" class="test.day1"/>
+        <method signature="day2.firstTestMethodDay2()[pri:0, instance:test.day2@50c87b21]" name="firstTestMethodDay2" class="test.day2"/>
+        <method signature="day3.webloginCarLoan()[pri:0, instance:test.day3@1753acfe]" name="webloginCarLoan" class="test.day3"/>
+        <method signature="day4.webloginHomeLoan()[pri:0, instance:test.day4@1593948d]" name="webloginHomeLoan" class="test.day4"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Home Loan" duration-ms="83" started-at="2019-10-08T13:39:29Z" finished-at="2019-10-08T13:39:29Z">
+      <class name="test.day4">
+        <test-method status="PASS" signature="beforeClassExecution()[pri:0, instance:test.day4@1593948d]" name="beforeClassExecution" is-config="true" duration-ms="0" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassExecution -->
+        <test-method status="FAIL" signature="loginAPIHomeLoan()[pri:0, instance:test.day4@1593948d]" name="loginAPIHomeLoan" duration-ms="11" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at test.day4.loginAPIHomeLoan(day4.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:402)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPIHomeLoan -->
+        <test-method status="PASS" signature="webloginHomeLoan()[pri:0, instance:test.day4@1593948d]" name="webloginHomeLoan" duration-ms="16" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webloginHomeLoan -->
+        <test-method status="PASS" signature="verifyParameterization(java.lang.String, java.lang.String)[pri:0, instance:test.day4@1593948d]" name="verifyParameterization" duration-ms="3" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[326112]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Deepak]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyParameterization -->
+        <test-method status="SKIP" signature="MobileloginHomeLoan()[pri:0, instance:test.day4@1593948d]" name="MobileloginHomeLoan" duration-ms="1" started-at="2019-10-08T19:09:29Z" depends-on-methods="test.day4.loginAPIHomeLoan" finished-at="2019-10-08T19:09:29Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method day4.MobileloginHomeLoan()[pri:0, instance:test.day4@1593948d] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method day4.MobileloginHomeLoan()[pri:0, instance:test.day4@1593948d] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1028)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:402)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileloginHomeLoan -->
+        <test-method status="PASS" signature="afterClassExecution()[pri:0, instance:test.day4@1593948d]" name="afterClassExecution" is-config="true" duration-ms="1" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassExecution -->
+      </class> <!-- test.day4 -->
+      <class name="test.day2">
+        <test-method status="PASS" signature="BeforeSuiteValidation()[pri:0, instance:test.day2@50c87b21]" name="BeforeSuiteValidation" is-config="true" duration-ms="23" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuiteValidation -->
+        <test-method status="PASS" signature="AfterSuiteValidation()[pri:0, instance:test.day2@50c87b21]" name="AfterSuiteValidation" is-config="true" duration-ms="1" started-at="2019-10-08T19:09:30Z" finished-at="2019-10-08T19:09:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuiteValidation -->
+      </class> <!-- test.day2 -->
+    </test> <!-- Home Loan -->
+    <test name="Test" duration-ms="78" started-at="2019-10-08T13:39:29Z" finished-at="2019-10-08T13:39:29Z">
+      <class name="test.day2">
+        <test-method status="PASS" signature="AfterSuiteValidation()[pri:0, instance:test.day2@50c87b21]" name="AfterSuiteValidation" duration-ms="9" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuiteValidation -->
+        <test-method status="PASS" signature="BeforeSuiteValidation()[pri:0, instance:test.day2@50c87b21]" name="BeforeSuiteValidation" duration-ms="3" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuiteValidation -->
+        <test-method status="PASS" signature="firstTestMethodDay2()[pri:0, instance:test.day2@50c87b21]" name="firstTestMethodDay2" duration-ms="2" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTestMethodDay2 -->
+        <test-method status="PASS" signature="secondTestMethodDay2()[pri:0, instance:test.day2@50c87b21]" name="secondTestMethodDay2" duration-ms="1" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTestMethodDay2 -->
+      </class> <!-- test.day2 -->
+      <class name="test.day1">
+        <test-method status="PASS" signature="BeforeTestValidation()[pri:0, instance:test.day1@5f375618]" name="BeforeTestValidation" is-config="true" duration-ms="0" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestValidation -->
+        <test-method status="PASS" signature="firstTestMethod()[pri:0, instance:test.day1@5f375618]" name="firstTestMethod" duration-ms="13" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTestMethod -->
+        <test-method status="PASS" signature="secondTestMethod()[pri:0, instance:test.day1@5f375618]" name="secondTestMethod" duration-ms="3" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTestMethod -->
+        <test-method status="PASS" signature="verifyParameterization(java.lang.String, java.lang.String)[pri:0, instance:test.day1@5f375618]" name="verifyParameterization" duration-ms="2" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[389524]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Vinithra]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyParameterization -->
+        <test-method status="PASS" signature="AfterTestValidation()[pri:0, instance:test.day1@5f375618]" name="AfterTestValidation" is-config="true" duration-ms="1" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestValidation -->
+      </class> <!-- test.day1 -->
+    </test> <!-- Test -->
+    <test name="Car Loan" duration-ms="75" started-at="2019-10-08T13:39:29Z" finished-at="2019-10-08T13:39:29Z">
+      <class name="test.day3">
+        <test-method status="PASS" signature="loginAPICarLoan()[pri:0, instance:test.day3@1753acfe]" name="loginAPICarLoan" duration-ms="18" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPICarLoan -->
+        <test-method status="PASS" signature="testAfterMethod()[pri:0, instance:test.day3@1753acfe]" name="testAfterMethod" duration-ms="2" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterMethod -->
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:test.day3@1753acfe]" name="testBeforeMethod" duration-ms="2" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeMethod -->
+        <test-method status="PASS" signature="webloginCarLoan()[pri:0, instance:test.day3@1753acfe]" name="webloginCarLoan" duration-ms="12" started-at="2019-10-08T19:09:29Z" finished-at="2019-10-08T19:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webloginCarLoan -->
+      </class> <!-- test.day3 -->
+    </test> <!-- Car Loan -->
+  </suite> <!-- Suite -->
+</testng-results>

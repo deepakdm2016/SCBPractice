@@ -1,0 +1,24 @@
+package test;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.testng.annotations.DataProvider;
+
+public class day5 {
+	
+	
+	@DataProvider(name="dataMethod")
+	public Object[][] dataProviderMethod() throws IOException
+	{
+		FileInputStream fis=new FileInputStream(new File("C:\\Users\\Deepak\\Desktop\\CapGemini\\Book1.xlsx"));
+		HSSFWorkbook wb=new HSSFWorkbook(fis);
+		wb.getSheetAt(0);
+		return null;
+		
+	}
+	
+}

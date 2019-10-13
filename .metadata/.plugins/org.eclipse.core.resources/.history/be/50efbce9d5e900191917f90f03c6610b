@@ -1,0 +1,8 @@
+import java.util.Properties;
+
+public class readProperties {
+
+	
+	Properties prop=new Properties();
+	prop.load()
+}

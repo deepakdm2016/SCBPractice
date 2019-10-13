@@ -1,0 +1,21 @@
+package test;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.testng.annotations.DataProvider;
+
+public class day5 {
+	
+	
+	@DataProvider(name="dataMethod")
+	public Object[][] dataProviderMethod() throws FileNotFoundException
+	{
+		FileInputStream fis=new FileInputStream(new File("C:\Users\Deepak\Desktop\CapGemini\Book1.xlsx"));
+		
+		return null;
+		
+	}
+	
+}

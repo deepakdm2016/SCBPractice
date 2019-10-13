@@ -1,0 +1,8 @@
+import java.util.Properties;
+
+public class readProperties {
+
+	FileInputStream fis=new FileInputStream(new File("C:\\Users\\Deepak\\SeleniumSCB\\ProjectProperties\\input.properties"));
+	Properties prop=new Properties();
+	prop.
+}

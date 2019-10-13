@@ -1,0 +1,4 @@
+def capsSmall(word):
+    for c in word:
+        if(c>='A' and c<='Z'):
+            caps+=1

@@ -1,0 +1,11 @@
+import math
+def mathFormula(c=50,h=30,num):
+    return math.sqrt(2*c*num/h)
+
+numbers=input("Please enter the numbers seperated by comma")
+n=numbers.split(',')
+
+    
+
+    
+    

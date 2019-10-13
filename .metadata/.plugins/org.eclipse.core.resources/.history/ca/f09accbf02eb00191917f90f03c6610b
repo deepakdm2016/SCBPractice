@@ -1,0 +1,10 @@
+import math
+def mathFormula(c=50,h=30,num):
+    return math.sqrt(2*c*num/h)
+
+
+
+    
+
+    
+    

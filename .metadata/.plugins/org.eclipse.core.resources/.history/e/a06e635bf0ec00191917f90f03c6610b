@@ -1,0 +1,13 @@
+package excelReader.excelReader;
+
+import java.io.File;
+
+public class readExcelProgram {
+
+	public static void main(String[] args) {
+
+		File f=new File("C:\\Users\\Deepak\\Desktop\\Edureka_dataScience\\bank-data.xlsx");
+		FileInputStream fis=new FileInputStream(f)
+	}
+
+}

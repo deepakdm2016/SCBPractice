@@ -1,0 +1,13 @@
+from math import radians, sin, cos, acos
+
+print("Input coordinates of two points:")
+slat = radians(float(input(" latitude of first point is: ")))
+slon = radians(float(input("longitude of first point is: ")))
+elat = radians(float(input("Latitude of second point is: ")))
+elon = radians(float(input("latitude of second point is: ")))
+
+dist = 6371.01 * acos(sin(slat)*sin(elat) + cos(slat)*cos(elat)*cos(slon - elon))
+
+
+
+print("The distance is %.2fkm." % dist)

@@ -1,0 +1,5 @@
+import math
+import re
+position=[0,0]
+steps=input("Please enter sequence of steps like 'UP 5DOWN 3LEFT 3RIGHT 2'")
+detailedSteps=re.split('(\d+)',steps)

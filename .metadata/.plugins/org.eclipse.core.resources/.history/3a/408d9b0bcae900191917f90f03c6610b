@@ -1,0 +1,46 @@
+package excelReader.excelReader;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
+
+public class excelDataProvider {
+	
+	
+	@DataProvider(name = "dataMethod")
+	public Object[][] dataProviderMethod() throws IOException {
+		FileInputStream fis = new FileInputStream(new File("C:\\Users\\Deepak\\Desktop\\CapGemini\\Book1.xlsx"));
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		XSSFSheet sheet = wb.getSheetAt(0);
+		int rows = sheet.getPhysicalNumberOfRows();
+		int cols = sheet.getRow(0).getLastCellNum();
+		Object[][] excelMatrix = new Object[rows][cols];
+
+		for (int i = 0; i < rows; i++) {
+			XSSFRow row = sheet.getRow(i);
+			for (int j = 0; j < cols; j++) {
+				XSSFCell cell = row.getCell(j);
+				
+				if (cell.getCellType() == XSSFCell.CELL_TYPE_STRING) {
+					excelMatrix[i][j] = cell.getStringCellValue();
+				} else
+					cellValue = String.valueOf(cell.getNumericCellValue());
+
+				
+				excelMatrix[i][j]=row.getCell(j).getStringCellValue();
+				}
+		}
+		
+		fis.close();
+		
+		return excelMatrix;
+
+	}
+
+}

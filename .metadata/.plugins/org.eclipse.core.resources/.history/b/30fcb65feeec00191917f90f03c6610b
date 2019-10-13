@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class removeDuplicates {
+
+	public static void main(String[] args) {
+
+		System.out.println("Please enter the string to remove the duplicates");
+		Scanner s=new Scanner(System.in);
+		String input=s.next();
+		StringBuffer output = null;
+		for(int i=0;i<input.length();i++)
+		{
+			if ((output.indexOf(input.substring(i, i+1))<0))
+					{
+						output.append(input.substring(i, i+1));
+					}
+			
+		}
+		
+		System.out.println(output);
+	}
+
+}

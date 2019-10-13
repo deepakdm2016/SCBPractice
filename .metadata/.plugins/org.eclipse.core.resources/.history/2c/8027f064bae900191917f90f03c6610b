@@ -1,0 +1,26 @@
+package test;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+
+public class day1 {
+	
+	@Test
+	public void BeforeTestValidation()
+	{
+		System.out.println("Executing before test of day1");
+	}
+	
+	@Test
+	public void firstTestMethod()
+	{
+		System.out.println("Hello, This is my first testNG program");
+	}
+	
+	@Test
+	public void secondTestMethod()
+	{
+		System.out.println("Hello, This is my second testNG program");
+	}
+
+}

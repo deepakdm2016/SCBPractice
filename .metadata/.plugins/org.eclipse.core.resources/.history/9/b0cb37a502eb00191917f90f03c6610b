@@ -1,0 +1,5 @@
+import math
+def mathFormula(c=50,h=30,num):
+    math.sqrt(2*)
+    
+    

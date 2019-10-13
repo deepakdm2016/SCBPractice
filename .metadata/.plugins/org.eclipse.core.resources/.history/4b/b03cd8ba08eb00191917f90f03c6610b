@@ -1,0 +1,4 @@
+import math
+
+l=[i for i in range(1,11)]
+math.fsum(l)

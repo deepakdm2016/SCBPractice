@@ -1,0 +1,13 @@
+def binaryToDecimal(num):
+    rem=0
+    i=0
+    output=0
+    while(num!=0):
+        rem=num%10
+        output=output+rem*2**i
+        i+=1
+        num//=10
+        
+    return output
+
+print(binaryToDecimal(100))

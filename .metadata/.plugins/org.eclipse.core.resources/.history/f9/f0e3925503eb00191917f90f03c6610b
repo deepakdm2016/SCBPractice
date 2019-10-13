@@ -1,0 +1,4 @@
+x=input("please enter number of rows")
+y=input("please enter number of cols")
+    
+    

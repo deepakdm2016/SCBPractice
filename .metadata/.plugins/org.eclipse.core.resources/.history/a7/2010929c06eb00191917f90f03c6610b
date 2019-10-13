@@ -1,0 +1,4 @@
+def binaryToDecimal(num):
+    rema=0
+    while(num!=0):
+        rem=num%10

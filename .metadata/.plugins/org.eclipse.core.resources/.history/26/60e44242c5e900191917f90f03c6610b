@@ -1,0 +1,19 @@
+package test;
+
+import java.io.FileInputStream;
+
+import org.testng.annotations.DataProvider;
+
+public class day5 {
+	
+	
+	@DataProvider(name="dataMethod")
+	public Object[][] dataProviderMethod()
+	{
+		FileInputStream fis=new FileInputStream(new File(""));
+		
+		return null;
+		
+	}
+	
+}

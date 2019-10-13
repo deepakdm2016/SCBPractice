@@ -1,0 +1,36 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class readProperties {
+
+	public static void main(String v[]) throws IOException {
+
+		Properties p = new Properties();
+		FileInputStream fis = new FileInputStream(
+				new File("C:\\Users\\Deepak\\SeleniumSCB\\ProjectProperties\\input.properties"));
+		p.load(fis);
+		System.out.println(p.get("name") + " " + p.getProperty("empId"));
+		WebDriver driver;
+
+		if (p.getProperty("browser").equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Deepak\\GetBackToWork\\chromedriver.exe");
+			driver = new ChromeDriver();
+		} else if (p.getProperty("browser").equals("firefox")) {
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Deepak\\GetBackToWork\\geckodriver.exe");
+			driver = new FirefoxDriver();
+		} else {
+			System.setProperty("webdriver.ie.driver", "C:\\Users\\Deepak\\GetBackToWork\\MicrosoftWebDriver.exe");
+			driver = new InternetExplorerDriver();
+		}
+		
+		driver.get(p.getProperty("URL"));
+		driver.quit();
+	}
+}

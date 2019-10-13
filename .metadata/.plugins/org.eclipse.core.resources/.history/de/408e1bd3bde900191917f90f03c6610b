@@ -1,0 +1,41 @@
+package test;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class day4 {
+	
+	
+	@BeforeClass
+	public void beforeClassExecution()
+	{
+		System.out.println("Hello, This is my test for before class execution in day4");
+	}
+	
+	@AfterClass
+	public void afterClassExecution()
+	{
+		System.out.println("Hello, This is my test for after class execution in day4");
+	}
+	
+	@Test(groups="Smoke")
+	public void webloginHomeLoan()
+	{
+		System.out.println("Hello, This is my webloginHomeLoan");
+	}
+	
+	@Test
+	public void MobileloginHomeLoan(dependsOnMethods="")
+	{
+		System.out.println("Hello, This is my MobileloginHomeLoan");
+	}
+	
+	@Test
+	public void loginAPIHomeLoan()
+	{
+		System.out.println("Hello, This is my loginAPIHomeLoan");
+	}
+
+	
+}

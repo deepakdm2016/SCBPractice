@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="empId" value="326112"/>
+  <parameter name="name" value="Deepak"/>
+  <listeners>
+    <listener class-name="test.listeners"/>
+  </listeners>
+  <test name="Home Loan(failed)" parallel="tests">
+    <parameter name="empId" value="326112"/>
+    <parameter name="name" value="Deepak"/>
+    <classes>
+      <class name="test.day2">
+        <methods>
+          <include name="BeforeSuiteValidation"/>
+          <include name="AfterSuiteValidation"/>
+        </methods>
+      </class> <!-- test.day2 -->
+      <class name="test.day1">
+        <methods>
+          <include name="AfterTestValidation"/>
+          <include name="BeforeTestValidation"/>
+        </methods>
+      </class> <!-- test.day1 -->
+      <class name="test.day4">
+        <methods>
+          <include name="beforeClassExecution"/>
+          <include name="loginAPIHomeLoan"/>
+          <include name="afterClassExecution"/>
+          <include name="MobileloginHomeLoan"/>
+        </methods>
+      </class> <!-- test.day4 -->
+    </classes>
+  </test> <!-- Home Loan(failed) -->
+</suite> <!-- Failed suite [Suite] -->

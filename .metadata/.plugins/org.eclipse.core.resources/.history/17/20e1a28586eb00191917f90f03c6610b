@@ -1,0 +1,25 @@
+def binSearch(li,search):
+    f=0
+    l=len(li)-1
+    
+    while(f<=l):
+        if(li[int((f+l)/2)]==search):
+            print("first If",li[((f+l)//2)])
+            return ("element found")
+        
+    
+        elif(search<li[int((f+l)/2)]):
+            print("second If",li[((f+l)//2)])
+            l=((f+l)//2)
+    
+        else:
+            print("in else",li[((f+l)//2)])
+            f=((f+l)//2)
+    
+    return("Element not found")
+            
+
+li=[1,4,6,8,9]
+print(binSearch(li, 3))
+    
+    

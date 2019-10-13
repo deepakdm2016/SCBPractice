@@ -1,0 +1,6 @@
+words=input("please enter the words which are to be sorted seperated by apace").split()
+print(words)
+sortedWords=sorted(words, key=None, reverse=False)
+duplicatesRemoved={}
+for w in sortedWords:
+    duplicatesRemoved

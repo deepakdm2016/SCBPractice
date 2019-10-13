@@ -1,0 +1,5 @@
+excelReader\excelReader\excelDataProviderTest.class
+excelReader\excelReader\SeleniumTest.class
+excelReader\excelReader\AppiumTest.class
+excelReader\excelReader\readExcelProgram.class
+excelReader\excelReader\RestAssuredTest.class

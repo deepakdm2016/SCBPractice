@@ -1,0 +1,13 @@
+package test;
+
+
+public class day5 {
+	
+	
+	@DataProvider(name="dataMethod")
+	public void dataProviderMethod()
+	{
+		
+	}
+	
+}

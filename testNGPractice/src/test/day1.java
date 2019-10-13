@@ -1,0 +1,45 @@
+package test;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+
+public class day1 {
+	
+	@BeforeTest
+	public void BeforeTestValidation()
+	{
+		System.out.println("Executing before test of day1");
+	}
+	
+	
+	@AfterTest
+	public void AfterTestValidation()
+	{
+		System.out.println("Executing After test of day1");
+	}
+	
+	@Test(groups="Smoke")
+	public void firstTestMethod()
+	{
+		System.out.println("Hello, This is my first testNG program");
+	}
+
+	
+	@Parameters({"empId","name"})
+	@Test
+	public void verifyParameterization(String empId, String name)
+	{
+		System.out.println("Parameterization value empId is "+empId+" and name is "+name);
+		System.out.println("Hello, This is my second testNG program");
+	}
+
+	
+	@Test
+	public void secondTestMethod()
+	{
+		System.out.println("Hello, This is my second testNG program");
+	}
+
+}

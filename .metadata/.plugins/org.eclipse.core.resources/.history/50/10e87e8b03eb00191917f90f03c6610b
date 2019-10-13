@@ -1,0 +1,10 @@
+x=int(input("please enter number of rows"))
+y=int(input("please enter number of columns"))
+
+Array2d=[]
+
+for i in x:
+    Array1d=[]
+    for j in y:
+
+    

@@ -1,0 +1,38 @@
+package test;
+
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+public class day2 {
+	
+	
+	@Test(groups="Smoke")
+	public void firstTestMethod()
+	{
+		System.out.println("Hello, This is my first testNG program from day2");
+	}
+	
+	@Test
+	public void secondTestMethod()
+	{
+		System.out.println("Hello, This is my second testNG program from day 2");
+	}
+
+	@BeforeSuite
+	@Test
+	public void BeforeTestValidation()
+	{
+		System.out.println("Executing before suite of day2");
+	}
+	
+	
+	@AfterSuite
+	@Test
+	public void AfterTestValidation()
+	{
+		System.out.println("Executing after suite of day2");
+	}
+	
+
+}

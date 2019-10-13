@@ -1,0 +1,13 @@
+x=int(input("please enter number of rows"))
+y=int(input("please enter number of columns"))
+
+Array2d=[]
+
+for i in range(0,x+1):
+    Array1d=[]
+    for j in range(0,y+1):
+        Array1d.append(i*j)
+
+    Array2d.append(Array1d)
+    
+print(Array2d)

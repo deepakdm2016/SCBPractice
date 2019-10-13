@@ -1,0 +1,3 @@
+def binaryToDecimal(num):
+    
+    while(num!=0)

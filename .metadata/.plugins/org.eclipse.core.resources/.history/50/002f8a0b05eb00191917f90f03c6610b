@@ -1,0 +1,3 @@
+words=input("please enter the words which are to be sorted seperated by apace").split()
+print(words)
+sorted(words, key=None, reverse=False))
